@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Assig</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen align-items-center justify-content-center">
+    <div class="lds-hourglass"></div>
+  </div>
+
+  <!-- Side Nav -->
+  <nav>
+    <div class="close-nav text-white p-3">
+      <span class="ms-auto p-0 fa-2x">x</span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#duration">Duration</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- header -->
+  <header>
+    <div class="layer position-relative">
+      <!-- content -->
+      <div class="header-content d-flex justify-content-center align-items-center h-100">
+        <div class="header-text text-white text-center">
+          <h1>Egyptian Party</h1>
+          <p>Let's have fun</p>
+        </div>
+      </div>
+      <!-- nav button -->
+      <div class="nav-open text-white position-absolute top-50 fa-2xl p-2">
+        <i class="fa-solid fa-bars"></i>
+        <span>Open</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- detials -->
+  <section class="details py-5">
+    <div class="container py-5">
+      <div class="details-content text-center">
+        <div class="singer mx-auto  ">
+          <h3 class="text-white p-2 m-0">Singer one</h3>
+          <div class="singer-info m-0">
+            <p class="m-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."</p>
+          </div>
+        </div>
+        <div class="singer mx-auto  ">
+          <h3 class="text-white p-2 m-0">Singer Two</h3>
+          <div class="singer-info m-0">
+            <p class="m-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."</p>
+          </div>
+        </div>
+        <div class="singer mx-auto  ">
+          <h3 class="text-white p-2 m-0">Singer Three</h3>
+          <div class="singer-info m-0">
+            <p class="m-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."</p>
+          </div>
+        </div>
+        <div class="singer mx-auto  ">
+          <h3 class="text-white p-2 m-0">Singer Four</h3>
+          <div class="singer-info m-0">
+            <p class="m-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Duration -->
+  <section class="duration">
+    <div class="layer p-5">
+      <div class="p-5">
+        <div class="counter w-100">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-sm-6  col-lg-3">
+                <div class="count text-center py-5 text-white seconds">
+                  <h3>
+                    -<span id="days"></span> D
+                  </h3>
+                </div>
+              </div>
+              <div class="col-sm-6  col-lg-3">
+                <div class="count text-center py-5 text-white seconds">
+                  <h3>
+                     <span id="hours"></span> h
+                  </h3>
+                </div>
+              </div>
+              <div class="col-sm-6  col-lg-3">
+                <div class="count text-center py-5 text-white seconds">
+                  <h3>
+                    <span id="minutes"></span> m
+                  </h3>
+                </div>
+              </div>
+              <div class="col-sm-6  col-lg-3">
+                <div class="count text-center py-5 text-white seconds">
+                  <h3>
+                    <span id="seconds"></span> s
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="expired text-white text-center display-1 ">Expired Date</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="head">
+            <h2>Join Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </div>
+          <div class="con-info text-left">
+            <h3 class="fa-1x"><b>CONTACT INFO</b></h3>
+            <p class="text-center p-2">Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.
+            </p>
+            <div class="icons text-center">
+              <p><i class="fa fa-map-marker"></i> New Street 22545, Nexa Road, New York City, USA</p>
+              <p class="red"><i class="fa fa-envelope"></i> hello@uigrid.com</p>
+              <p><i class="fa fa-phone"></i> 001-000-000-000</p>
+            </div>
+            <div class="con-social">
+              <i class="fa-brands fa-facebook fa-lg"></i>
+              <i class="fa-brands fa-twitter fa-lg"></i>
+              <i class="fa-brands fa-google-plus fa-lg"></i>
+              <i class="fa-brands fa-github fa-lg"></i>
+              <i class="fa-brands fa-behance fa-lg"></i>
+              <i class="fa-brands fa-dribbble fa-lg"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <input class="form-control p-3 my-3" type="text" placeholder="Enter Name">
+            <input class="form-control p-3 my-3" type="email" placeholder="Enter Email">
+            <textarea class="form-control p-3 my-3" rows="10" placeholder="Enter Message" ></textarea>
+            <p><span class="fa-2x text-danger" id="remainChar">100</span> Character Reamining</p>
+            <button class="btn btn-danger">Send Message</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
